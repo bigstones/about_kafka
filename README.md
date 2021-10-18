@@ -1,5 +1,42 @@
 # about-kafka
 
+## kafka
+
+<details open>
+<summary>접기/펼치기</summary>
+<div markdown="1">
+
+    #pip install kafka-python
+    
+producer
+    
+    
+    from kafka import KafkaProducer
+    
+    producer = KafkaProducer(
+        bootstrap_servers = hostIP[:port]
+    )
+    
+consumer
+    
+    from kafka import KafkaConsumer
+    
+    consumer = KafkaConsumer(
+        topic = [topic]
+        bootstrap_servers = hostIP[:port]
+    )
+    
+    # 데이터 수신하는법 1
+    consumer_records = list(consumer)
+    
+    # 데이터 수신하는법 2
+    kafka_response = consumer.poll()
+
+    
+</div>
+</details>
+
+
 ##### kafka 주요 옵션
 
     broker.id : 브로커를 구분하기 위한 ID값(key값이라고 생각하면 편할듯)
