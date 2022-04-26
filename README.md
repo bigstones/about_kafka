@@ -2,6 +2,8 @@
 
 ## kafka
 
+    카프카는 stream 방식이랑 pub/sub 방식이 있다
+
 <details open>
 <summary>접기/펼치기</summary>
 <div markdown="1">
